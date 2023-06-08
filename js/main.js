@@ -14,13 +14,11 @@ fetch("./js/productos.json")
     let botonAgregarCarrito = document.querySelectorAll(".boton-agregar-carrito");
     const numero = document.querySelector("#numero");
 
-    // const 
 
     console.log(botonAgregarCarrito);
 
     function cargadeProductos(productosE){
-        productosContainer.innerHTML = "";   // vacia productos container 
-            // foreach de los productos seleccionados 
+        productosContainer.innerHTML = "";  
         productosE.forEach(producto => {
 
             const div = document.createElement("div");
@@ -52,7 +50,7 @@ menuBoton.forEach(boton => {
 
         menuBoton.forEach(boton => boton.classList.remove("active"));
         e.currentTarget.classList.add("active");
-        if (e.currentTarget.id != "todos") {                   // carga  cada cateroia con la siguiente condicion
+        if (e.currentTarget.id != "todos") {                  
             const productoCategoria = productos.find(producto => producto.categoria.id === e.currentTarget.id);
             titutoPrincipal.innerText =  productoCategoria.categoria.nombre;
 
@@ -60,7 +58,7 @@ menuBoton.forEach(boton => {
             cargadeProductos(botonProductos);
         } else {
             titutoPrincipal.innerText = "Todos los productos";
-            cargadeProductos(productos);  // sino carga todos los productos 
+            cargadeProductos(productos); 
         }
 
     })
@@ -79,12 +77,11 @@ let carritoProductos;
 let carritoProductosEnLS = localStorage.getItem("productos-en-carrito");
 
 if (carritoProductosEnLS){
-     carritoProductos = JSON.parse(carritoProductosEnLS);          // si hay algo en el JSON pasre que estoy trayendo del LS va a ser igual a carritoProductos 
+carritoProductos = JSON.parse(carritoProductosEnLS);       
     numeroActualizado();
 } else {
     carritoProductos = [];  //sino el carrito está vacio
 }
-
 
 
 function agregarCarrito(evento){
@@ -97,28 +94,28 @@ function agregarCarrito(evento){
         position: "center", 
         stopOnFocus: true, 
         style: {
-          background: "linear-gradient(to right, #961818, #450101)",
+        background: "linear-gradient(to right, #961818, #450101)",
         },
         onClick: function(){}
-      }).showToast();
-    const idClickeado = evento.currentTarget.id;    // me devuelve el id de el boton de agregar
+    }).showToast();
+    const idClickeado = evento.currentTarget.id;   
     const productoAgregado = productos.find(producto => producto.id === idClickeado);  
 
-  if(carritoProductos.some(producto => producto.id === idClickeado)){              // quiero que me diga si el elemento clickeado ya estaba en el carrito. T o F ? 
-        const indiceCarrito = carritoProductos.findIndex(producto => producto.id === idClickeado);
-        carritoProductos[indiceCarrito].cantidad++;
+if(carritoProductos.some(producto => producto.id === idClickeado)){         
+    const indiceCarrito = carritoProductos.findIndex(producto => producto.id === idClickeado);
+    carritoProductos[indiceCarrito].cantidad++;
     } else{
-        productoAgregado.cantidad = 1;
-        carritoProductos.push(productoAgregado);   // pusheo al array el producto 
+    productoAgregado.cantidad = 1;
+    carritoProductos.push(productoAgregado);   
     }
     numeroActualizado();
-    localStorage.setItem("productos-en-carrito", JSON.stringify(carritoProductos));  // mando al localstorage lo que esté en el carrito
+    localStorage.setItem("productos-en-carrito", JSON.stringify(carritoProductos));  
 }
 
 
 
 function numeroActualizado(){
-    let numeroNuevo = carritoProductos.reduce((acc, producto) => acc + producto.cantidad, 0);  // para que se actualice el numero de
+    let numeroNuevo = carritoProductos.reduce((acc, producto) => acc + producto.cantidad, 0);  
     numero.innerText = numeroNuevo;
 }
 

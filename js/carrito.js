@@ -12,8 +12,8 @@ const contenedorTotal = document.querySelector("#total");
 
 function cargarProductosCarrito(){
     if (carritoProductos && carritoProductos.length > 0){
-        contenedorCarritoVacio.classList.add("pantalla-desactivada");             // Si hay productos en carrito, carrito vacio tiene la clase pantalla desactivada 
-        contenedorProductos.classList.remove("pantalla-desactivada");            // Remuevo la clase Disabled de los contenedores Prodcutos y Acciones
+        contenedorCarritoVacio.classList.add("pantalla-desactivada");           
+        contenedorProductos.classList.remove("pantalla-desactivada");            
         contenedorCarritoAcciones.classList.remove("pantalla-desactivada");
         contenedorCarritoComprado.classList.add("pantalla-desactivada");
     
@@ -50,8 +50,8 @@ function cargarProductosCarrito(){
         });
     
     } else{
-        contenedorCarritoVacio.classList.remove("pantalla-desactivada");             // Si hay productos en carrito, carrito vacio tiene la clase pantalla desactivada 
-        contenedorProductos.classList.add("pantalla-desactivada");            // Remuevo la clase Disabled de los contenedores Prodcutos y Acciones
+        contenedorCarritoVacio.classList.remove("pantalla-desactivada");            
+        contenedorProductos.classList.add("pantalla-desactivada");            
         contenedorCarritoAcciones.classList.add("pantalla-desactivada");
         contenedorCarritoComprado.classList.add("pantalla-desactivada");
     }
