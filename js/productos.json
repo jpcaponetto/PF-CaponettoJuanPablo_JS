@@ -1,0 +1,154 @@
+[
+
+        {
+            "id": "controladorfiscal-01",
+            "titulo": "Sam4s 330",
+            "imagen": "./img/cf/01.jpg",
+            "categoria": {
+                "nombre": "Controladores Fiscales",
+                "id": "controladorfiscal"
+            },
+            "precio": 279900
+        },
+
+        {
+            "id": "controladorfiscal-02",
+            "titulo": "Hasar 6100",
+            "imagen": "./img/cf/02.jpg",
+            "categoria":{
+                "nombre": "Controladores Fiscales",
+                "id":"controladorfiscal"
+            },
+            "precio": 289900
+        },
+        {
+            "id": "calculadoras-01",
+            "titulo": "Cifra 235",
+            "imagen": "./img/calculadoras/01.gif",
+            "categoria":{
+                "nombre": "Calculadoras",
+                "id": "calculadoras"
+            },
+            "precio": 66000
+        },
+        {
+            "id": "calculadora-02",
+            "titulo": "Cifra 255-t",
+            "imagen": "./img/calculadoras/02.gif",
+            "categoria":{
+                "nombre": "Calculadoras",
+                "id": "calculadoras"
+            },
+            "precio": 77900
+        },
+        {
+            "id": "contadoradebilletes-01",
+            "titulo": "Eli 190",
+            "imagen": "./img/contadorasdebilletes/01.jpg",
+            "categoria":{
+                "nombre": "Contadoras de Billetes",
+                "id": "contadoradebilletes"
+            },
+            "precio": 55000
+        },
+        {
+            "id": "contadoradebilletes-02",
+            "titulo": "Eli 1500",
+            "imagen": "./img/contadorasdebilletes/02.jpg",
+            "categoria":{
+                "nombre": "Contadoras de Billetes",
+                "id": "contadoradebilletes"
+            },
+            "precio": 325000
+        },
+        {
+            "id": "contadoradebilletes-03",
+            "titulo": "Eli 2000",
+            "imagen": "./img/contadorasdebilletes/03.jpg",
+            "categoria":{
+                "nombre": "Contadoras de Billetes",
+                "id": "contadoradebilletes"
+            },
+            "precio": 421000
+        },
+        {
+            "id": "impresorafiscal-01",
+            "titulo": "EPSON TM-T900FA",
+            "imagen": "./img/impresoresfiscales/01.jpg",
+            "categoria":{
+                "nombre": "Impresoras Fiscales",
+                "id": "impresoresfiscales"
+            },
+            "precio": 289900
+        },
+        {
+            "id": "impresorafiscal-02",
+            "titulo": "HASAR SMH/PT-250F",
+            "imagen": "./img/impresoresfiscales/02.jpg",
+            "categoria":{
+                "nombre": "Impresoras Fiscales",
+                "id": "impresoresfiscales"
+            },
+            "precio": 279900
+        },
+        {
+            "id": "impresorafiscal-03",
+            "titulo": "SAM4S ELLIX-40F",
+            "imagen": "./img/impresoresfiscales/03.jpg",
+            "categoria":{
+                "nombre": "Impresoras Fiscales",
+                "id": "impresoresfiscales"
+            },
+            "precio": 269900
+        },
+        {
+            "id": "balanzas-01",
+            "titulo": "SYSTEL CROMA 15 KG",
+            "imagen": "./img/balanzas/01.jpg",
+            "categoria":{
+                "nombre": "Balanzas",
+                "id": "balanzas"
+            },
+            "precio": 65000
+        },
+        {
+            "id": "balanzas-02",
+            "titulo": "SYSTEL CLIPSE 5 KG",
+            "imagen": "./img/balanzas/02.jpg",
+            "categoria":{
+                "nombre": "Balanzas",
+                "id": "balanzas"
+            },
+            "precio": 55000
+        },
+        {
+            "id": "balanzas-03",
+            "titulo": "SYSTEL CLIPSE 15 KG",
+            "imagen": "./img/balanzas/02.jpg",
+            "categoria":{
+                "nombre": "Balanzas",
+                "id": "balanzas"
+            },
+            "precio": 65000
+        },
+        {
+            "id": "balanzas-04",
+            "titulo": "SYSTEL CLIPSE 31 KG",
+            "imagen": "./img/balanzas/02.jpg",
+            "categoria":{
+                "nombre": "Balanzas",
+                "id": "balanzas"
+            },
+            "precio": 75000
+        },
+        {
+            "id": "sistemadefacturacion",
+            "titulo": "Sistema de Facturación",
+            "imagen": "./img/sistemadefacturacion/01.jpg",
+            "categoria":{
+                "nombre": "Sistema de Facturación",
+                "id": "sistemadefacturacion"
+            },
+            "precio": 85000
+        }
+    ]
